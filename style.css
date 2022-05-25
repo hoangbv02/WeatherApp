@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@300;400;500;700&display=swap');
+:root{
+    --white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s;
+    overflow: hidden;
+}
+
+.hide{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.weather{
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.25s;
+    color: white;
+}
+
+.content{
+    transition: all 0.5s;
+}
+
+.search{
+    margin-top: 10px;
+    width: 100%;
+    font-size: 19px;
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 0 15px 0 15px;
+    transition: all 0.5s;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search:focus{
+    border-radius: 15px 0 15px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.name{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+.name span{
+    margin: 0 4px;
+}
+
+.time{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.temperature{
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    width: 250px;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 65px;
+    font-weight: bold;
+    box-shadow: 4px 4px rgba(0,0,0,0.5);
+}
+.value{
+    text-shadow: 4px 4px rgba(0,0,0,0.5);
+}
+.value sup{
+    margin-left: 16px;
+}
+
+.short-desc{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    text-shadow: 2px 2px rgba(0,0,0,0.8);
+}
+
+.more-desc{
+    margin: 40px 0 70px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.visibility, .wind, .sun{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visibility span, .wind span, .sun span{
+    margin-top: 16px;
+}

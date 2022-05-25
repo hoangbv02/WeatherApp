@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather app</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="weather">
+            <input type="text" class="search" placeholder="Search..." />
+            <div class="content">
+                <h1 class="name">
+                    <span class="city">Ha Noi</span>
+                    <span>,</span>
+                    <span class="country">VN</span>
+                </h1>
+                <div class="time">09:52:41, 19/5/2022</div>
+                <div class="temperature">
+                    <div class="value">
+                        <span>25</span>
+                        <sup>o</sup>C
+                    </div>
+                </div>
+                <h1 class="short-desc">Clounds</h1>
+                <div class="more-desc">
+                    <div class="visibility">
+                        <i class="fa-regular fa-eye"></i>
+                        <span>10000 (m)</span>
+                    </div>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <span>10000 (m)</span>
+                    </div>
+                    <div class="sun">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                        <span>10000 (m)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
