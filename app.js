@@ -23,21 +23,21 @@ function changeWeatherUI(searchValue) {
                 time.innerText = new Date().toLocaleString("vi");
                 let temp = Math.round(data.main.temp);
                 value.innerText = temp;
-                shortDesc.innerText = 'Anh yêu em😘';
+                shortDesc.innerText = data.weather[0].main;
                 visibility.innerText = data.visibility + "(m)";
                 wind.innerText = data.wind.speed + "(m/s)";
                 sun.innerText = data.clouds.all + "(%)";
-
+                console.log(data);
                 if (temp >= 30) {
                     body.style.background =
                         "linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(img/hot.png) no-repeat center/cover";
                     weather.style.background =
-                        "url(img/260959454_583750139383681_5955654051355496671_n.jpg) no-repeat center/cover";
+                        "url(img/hot.png) no-repeat center/cover";
                 } else if (temp >= 25) {
                     body.style.background =
-                        "linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(img/ny.jpg) no-repeat center/cover";
+                        "linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(img/cool.jpg) no-repeat center/cover";
                     weather.style.background =
-                        "url(img/ny.jpg) no-repeat center/cover";
+                        "url(img/cool.jpg) no-repeat center/cover";
                 } else if (temp >= 20) {
                     body.style.background =
                         "linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(img/warn.jpg) no-repeat center/cover";
